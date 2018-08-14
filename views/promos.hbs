@@ -1,0 +1,12 @@
+<ul>
+  {{#each promos}}
+    <li>
+      Name: {{this.name}}<br>
+      Percent: {{this.advantage.percent}}%<br>
+      <a href="/promo-code/{{this._id}}">View details</a>
+    </li>
+
+    {{else}}
+    <h2>No promo codes has been created yet. <a href="/add-promo-code">Create one now!</a></h2>
+  {{/each}}
+</ul>

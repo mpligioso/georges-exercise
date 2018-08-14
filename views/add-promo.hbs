@@ -1,0 +1,48 @@
+<form method="POST" action="/api/promos">
+  <label> Name:
+    <input type="text" name="name" placeholder="ex: SunnyDay2018">
+  </label>
+
+  <br>
+
+  <label> Percent Discount:
+    <input type="number" min=0 name="percent" placeholder="15">
+  </label>
+
+  <br>
+
+  <label> Qualifications: </label>
+  <br>
+
+  <label>Minimum Age to be Qualified:
+    <input type="number" min=0 name="minAge" placeholder="15">
+  </label>
+
+  <label>Maximum Age to be Qualified:
+    <input type="number" min=0 name="maxAge" placeholder="30">
+  </label>
+  <br>
+
+  <label>Valid from:
+    <input type="date" name="startDate" placeholder="2017-05-02">
+  </label>
+
+  <label>Valid to:
+    <input type="date" name="endDate" placeholder="2018-05-02">
+  </label>
+
+  <br>
+
+  <label> Weather Specification:
+    <input type="text" name="weatherType" placeholder="Sunny">
+  </label>
+
+  <label> Temperature:
+    <input type="number" max=50 name="weatherTemp" placeholder="20C°">
+  </label>
+
+
+  <br>
+
+  <button>Add Promo Code</button>
+</form>

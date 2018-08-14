@@ -1,0 +1,16 @@
+<ul>
+  <li>Name: {{promoDoc.name}}</li>
+
+  <li>Percent: {{promoDoc.advantage.percent}}%</li>
+
+  <li><b>Restrictions:</b>
+  <p>Must be between {{promoDoc.restrictions.age.minAge}} and {{promoDoc.restrictions.age.maxAge}} years of age.</p>
+
+  <p>Valid from {{promoDoc.restrictions.date.after}} to {{promoDoc.restrictions.date.before}}</p>
+
+  <p>Weather type must be {{promoDoc.restrictions.weather.is}} and the temperature must be {{promoDoc.restrictions.weather.temp}}C°!</p>
+
+  </li>
+</ul>
+
+<a href="/use-promo-code/{{promoDoc._id}}">Check eligibility for this code!</a>
