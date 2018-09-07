@@ -1,7 +1,43 @@
 const express = require('express');
+const hash = require("string-hash");
 const Promo = require("../models/promo-model.js")
 
 const router  = express.Router();
+
+class HashTable {
+  constructor(){
+    this.list = [];
+  }
+
+  get(x){
+    return this.list[hash(x)]
+  }
+
+  set(x, y){
+    this.list[hash(x)] = y;
+  }
+}
+
+const functionsMap = new HashTable();
+
+//check age
+ageValidator = function (){
+
+;}
+
+//check dates
+dateValidator = function(){
+
+};
+
+//check weather
+weatherValidator = function(){
+
+};
+
+
+functionsMap.set(age, ageValidator);
+
 
 
 //ADD A DISCOUNT
